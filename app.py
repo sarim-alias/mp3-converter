@@ -13,6 +13,10 @@ app = Flask(__name__, template_folder="templates")
 def index():
     return render_template("index.html")
 
+@app.route('/id')
+def index_id():
+    return render_template("index.html", lang="id")  # Indonesian version
+
 @app.route('/download', methods=['POST'])
 def download():
     video_url = request.form.get("url")

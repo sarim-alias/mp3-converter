@@ -486,6 +486,30 @@
                 arrow.classList.toggle('active');
             });
         });
+         // Get the language passed from Flask
+         const lang = "{{ lang }}";
+
+// Define translations
+const translations = {
+    en: {
+        title: "Download TikTok MP3 online with Free TikTok MP3 Downloader",
+        heading: "TikTok MP3 Downloader",
+        placeholder: "Just insert a link",
+        download: "Download",
+    },
+    id: {
+        title: "Unduh TikTok MP3 online dengan Pengunduh MP3 TikTok Gratis",
+        heading: "Pengunduh MP3 TikTok",
+        placeholder: "Masukkan tautan",
+        download: "Unduh",
+    }
+};
+
+// Apply translations based on language
+document.title = translations[lang]?.title || translations.en.title;
+document.querySelector("h1").innerText = translations[lang]?.heading || translations.en.heading;
+document.querySelector(".url-input").placeholder = translations[lang]?.placeholder || translations.en.placeholder;
+document.querySelector(".download-btn").innerText = translations[lang]?.download || translations.en.download;
     </script>
     
 </body>
