@@ -1,6 +1,8 @@
-from flask import Flask, request, send_file, render_template
+from flask import Flask, request, send_file, render_template, after_this_request
 import yt_dlp
 import os
+import threading
+import time
 
 # Create a downloads folder if it doesn't exist
 DOWNLOAD_FOLDER = "downloads"
@@ -42,7 +44,22 @@ def download():
     except Exception as e:
         return f"Error downloading audio: {str(e)}"
 
+    # Delete file after sending response
+    @after_this_request
+    def remove_file(response):
+        threading.Thread(target=delete_file_after_delay, args=(filename, 60)).start()
+        return response
+
     return send_file(filename, as_attachment=True)
+
+def delete_file_after_delay(filename, delay=60):
+    """Delete the file after a delay (default: 60 seconds)"""
+    time.sleep(delay)
+    try:
+        os.remove(filename)
+        print(f"Deleted: {filename}")
+    except Exception as e:
+        print(f"Error deleting file: {str(e)}")
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5002)
