@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSSTikTok Downloader - Download TikTok Video Without Watermark</title>
+    <meta name="description" content="Download TikTok videos without watermark using SSSTikTok Downloader. Our TikTok video downloader makes it easy to download high-quality content!">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="SSSTikTok MP3 Team" />
+    <meta name="publisher" content="SSSTikTok MP3 Team" />
+    <link rel="canonical" href="https://ssstiktokmp3.com/" />
+    <meta name="msvalidate.01" content="C9C76C7D00C444DFEC549DCA0452FECD" /> 
+    <link rel="icon" href="/public/logo.png" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TGMHM61SL8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TGMHM61SL8');
+</script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .features-section {
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f1f1f1;
+        }
+        
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .feature-item {
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .feature-title {
+            font-size: 24px;
+            color: #2b3133;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        .feature-description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: grey;
+            max-width: 250px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .main-description {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .faq-title {
+          font-size: 24px;
+          color: #2b3133;
+          margin-bottom: 15px;
+          font-weight: 800;
+          text-align: center;
+        } 
+
+        .description-text {
+          font-size: 16px;
+          line-height: 1.6;
+          color: grey;
+          margin-bottom: 40px;
+          text-align: left;
+        }
+        
+        .main-title {
+          font-size: 24px;
+          color: #2b3133;
+          margin-bottom: 15px;
+          font-weight: 800;
+        }
+        
+        .description-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: grey;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        body
+                {
+                    background:#F1F1F1;
+                }
+        
+        .main-content {
+            background:black;
+            min-height:400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        .navbar {
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #000000;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            /* background-color: #5D3FD3; */
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .video-button {
+        margin-left: auto;
+        padding: 10px 15px;
+        background-color: #2b3133;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .video-button:hover {
+        background-color: #0e1011;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .terms {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .sarim {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .video-buttons {
+        margin-left: auto;
+        padding: 10px 15px;
+        background-color: #2b3133;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+        margin: auto;
+      }
+
+      .video-buttons:hover {
+        background-color: #1f2527;
+      }
+        
+        .download-arrow {
+            color: white;
+            font-size: 24px;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:start;
+            flex-grow: 1;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        h1 {
+            padding-top: 30px;
+
+            color: white;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .steps-mp3 {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+        
+        .download-form {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            position: relative;
+            height: 60px;
+            overflow: hidden;
+            border: 2px solid white;
+            border-radius: 8px;
+            background-color: #ffff;
+        }
+        
+        .url-input {
+            flex-grow: 1;
+            padding: 15px 25px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background-color:#ffff;
+        }
+        
+        .download-btn {
+            background-color: #2B3133;
+            margin: 3px;
+            color: white;
+            border: none;
+            padding: 0 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+        }
+        
+      
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            margin-top:50px;
+            text-align: center;
+            height: 200px;
+            display: flex;
+             align-items: center;
+             flex-direction: column;
+          justify-content: center;
+        }
+        
+        .footer-nav {
+            margin-bottom: 15px;
+        }
+        
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-disclaimer {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-copyright {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 550;
+            color: #2b3133;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        
+        .faq-answer.active {
+            max-height: 500px;
+            padding:20px;
+            color: grey;
+        }
+        
+        .arrow {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .arrow.active {
+            transform: rotate(180deg);
+        }
+        
+        .arrow svg {
+            width: 100%;
+        }
+
+        .unlimited-svg {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+      }
+
+      .audio-svg svg {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+      }
+
+      .fast-svg svg {
+        width: 50px;
+        height: 50px;
+      }
+
+      .description-text {
+                font-size: 16px;
+                line-height: 1.6;
+                color:grey;
+                margin-bottom: 40px;
+                text-align: left;
+            }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .download-form {
+                flex-direction: column;
+                height: auto;
+                border-radius: 15px;
+                overflow: visible;
+                border: none;
+                background:#2b3133;
+            }
+            
+            .url-input {
+                width: 100%;
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
+            
+            .download-btn {
+                width: 100%;
+                padding: 15px;
+                border-radius:8px;
+                border: 1px solid white;
+                background-color: gray;
+            }
+            .footer-nav a {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+            
+            .footer-disclaimer,
+            .footer-copyright {
+                font-size: 12px;
+            }
+
+            .main-content {
+            background: #2b3133;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom:0px;
+        }
+            }
+        
+   
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .navbar {
+                padding: 10px;
+            }
+            
+            .logo {
+                font-size: 16px;
+            }
+            
+            .logo-icon {
+                width: 30px;
+                height: 30px;
+            }
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .footer-nav a {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" class="logo">
+            <div class="logo-icon">
+               <img src="/public/logo.png" width="40px" />
+            </div>
+            TikTok
+        </a>
+        <a href="/" class="video-button">Download Audio</a>
+    </div>
+    
+    <div class="main-content">
+        <h1>SSSTikTok MP4 Downloader</h1>
+        <p class="steps-mp3">To download tiktok video, enter the url in field below.</p>
+        
+        <form action="/video/download" method="post" class="download-form">
+            <input type="text" name="url" placeholder="Enter your tiktok video url to download video" required class="url-input">
+            <button type="submit" class="download-btn">Download</button>
+        </form>
+        <div class="terms">
+          <p class="sarim">To download the audio, click the button below.</p>
+          <a href="/" class="video-buttons">Download Audio</a>
+        </div>
+        <div class="popup-overlay" id="popup">
+          <div class="popup-content">
+            <p>Downloading in progress...</p>
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    <div class="features-section">
+        <div class="features-container">
+            <div class="features-grid">
+                <div class="feature-item">
+                  <div class="unlimited-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 64" id="unlimited">
+                    <g id="Layer_2">
+                      <path id="Icons" d="M96 0C83.152 0 73.207 9.097 64 19.623 54.793 9.097 44.848 0 32 0a32 32 0 0 0 0 64c12.848 0 22.793-9.097 32-19.623C73.207 54.903 83.152 64 96 64a32 32 0 0 0 0-64zM32 48a16 16 0 0 1 0-32c6.89 0 14.266 7.485 21.549 16C46.266 40.515 38.89 48 32 48zm64 0c-6.89 0-14.266-7.485-21.549-16C81.734 23.485 89.11 16 96 16a16 16 0 0 1 0 32z"></path>
+                    </g>
+                  </svg>
+                </div>
+                    <div class="feature-title">Unlimited</div>
+                    <div class="feature-description">
+                      Our TikTok downloader offers unlimited mp4 downloads.
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                  <div class="audio-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="audio" width="48" height="48" x="0" y="0" fill="#000" version="1.1" viewBox="0 0 48 48">
+                      <path d="M30 47.214v-6.315C36.975 38.421 42 31.83 42 24c0-7.824-5.025-14.418-12-16.896V.786C40.344 3.456 48 12.822 48 24c0 11.181-7.656 20.547-18 23.214zM9 36c-4.971 0-9-4.032-9-9v-6a9 9 0 0 1 9-9h3L27 0v48L12 36H9zm12 0V12l-6 6H9a3 3 0 0 0-3 3v6c0 1.659 1.341 3 3 3h6l6 6zm18-12c0 5.583-3.831 10.236-9 11.574v-6.405c1.788-1.041 3-2.955 3-5.169s-1.212-4.128-3-5.169v-6.405c5.169 1.335 9 5.988 9 11.574z"></path>
+                    </svg>              
+                  </div>
+                    <div class="feature-title">High-Quality Audio</div>
+                    <div class="feature-description">
+                      Download TikTok mp3 with original and high-quality audio.
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                  <div class="fast-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="lightning" width="64" height="64" x="0" y="0" fill="#252525" version="1.1" viewBox="0 0 64 64">
+                      <path d="M29.695 38l-6.661 24.74 1.776.845 26-36L50 26H37.166l3.823-24.848-1.831-.69-23 36L17 38h12.695zm8.596-32.468l-3.279 21.316L36 28h12.044l-21.66 29.991 5.582-20.731L31 36H18.826L38.291 5.532z" fill="#252525"></path>
+                    </svg>
+                  </div> 
+                    <div class="feature-title">Fast & Free </div>
+                    <div class="feature-description">
+                      The ssstiktok mp4 downloader is fast and free to use 24x7.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-description">
+                <div class="main-title">How To Download The Video/Mp4 With TikTok MP4 Downloader?</div>
+                <div class="description-text">
+            sssTikTok mp4 downloader is here to help you download your desired
+            TikTok video mp4 anytime you need. Just download and see for
+            yourself.
+            <br />
+            The process is fairly straightforward. Here is how you can use it.
+            <br />
+            <br />
+
+            1- First, copy the video URL or audio from TikTok. You can do this
+            by tapping the share symbol on the right side of the screen. There
+            you can find the “Copy Link” option. If you are checking TikTok on a
+            Desktop then right-click on the video and copy the URL from
+            there.<br /><br />
+
+            2- Now hit the ssstiktok mp4 web and paste the link on the top of
+            the home page. The tool will process the link, and extract the
+            studio and you will then have the download option to choose from.
+            <br /><br />
+
+            3- If you are using it on your mobile phone, then do the same by
+            long pressing on the same area to paste the link. <br /><br />
+
+            4- Now just hit the download button and your video will be downloaded.
+            <br /><br />
+
+            TikTok doesn't need any introduction in modern culture. Formerly
+            known as Dubsmash then Musically( also known as Dou yin in China)
+            started the trend of short-form video content. It set the trend
+            among content creators to create videos for just a few seconds and
+            entertain millions of viewers around the world. It is the most
+            downloaded social networking app in the world. You can save your
+            videos, and videos from other users as well, but the videos are
+            watermarked. <br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-container">
+      <div class="faq-title">
+        Frequently Asked Questions (FAQs) About SSSTikTok MP4 Downloader
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          How to download TikTok mp4?
+          <div class="arrow">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10l5 5 5-5z" fill="#666" />
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You can download TikTok videos mp4 by pasting links into the input
+            field and clicking "download TikTok video.
+          </p>
+        </div>
+      </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                Is it legal to download TikTok videos as MP4?
+                <div class="arrow">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10l5 5 5-5z" fill="#666"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                
+                <p>Downloading TikTok videos as MP3 may violate copyright laws and TikTok's terms of service.                </p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                How do I use a TikTok MP3 downloader?
+                <div class="arrow">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10l5 5 5-5z" fill="#666"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <p>Copy the TikTok video URL, paste it into the downloader, and download the audio in MP3 format.  </p>
+                        </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                Are TikTok MP3 downloaders free to use?
+                <div class="arrow">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10l5 5 5-5z" fill="#666"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <p>Many TikTok MP3 downloaders are free, but some may offer paid features.</p>
+               
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                Can I download TikTok MP3 files to my phone?
+                <div class="arrow">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10l5 5 5-5z" fill="#666"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, you can download TikTok MP3 files directly to your phone using web-based tools or apps.                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <a href="/contacts">Contacts</a>
+            <a href="/apk">APK</a>
+            <a href="/stories">Stories</a>
+        </div>
+        <div class="footer-disclaimer">
+            We are not affiliated with TikTok, Douyin or Bytedance.
+        </div>
+        <div class="footer-copyright">
+            Copyright 2018-2025
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const arrow = question.querySelector('.arrow');
+                
+                // Toggle active class on answer
+                answer.classList.toggle('active');
+                
+                // Toggle active class on arrow
+                arrow.classList.toggle('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>
